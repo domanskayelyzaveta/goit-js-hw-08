@@ -5,8 +5,8 @@
 // Для того щоб підключити CSS код бібліотеки в проект, необхідно додати ще один імпорт, крім того, що описаний в документації.
 
 
-import SimpleLightbox from 'simple-lightbox';
-import 'simple-lightbox/dist/simpleLightbox.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simpleLightbox.min.css';
 
 
 // Add imports above this line
