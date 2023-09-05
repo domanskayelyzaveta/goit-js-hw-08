@@ -40,9 +40,8 @@ formEl.addEventListener('submit', event => {
 
 ///ось тут не розумію що передавати в дужки////
 
-function onPageLoad() {
-    for (const key of Object.keys(formDataJSON)) {
-        formElement.elements[key].value = formDataJSON[key];
-    }
+// function onPageLoad() {
+//     for (const key of Object.keys(formDataJSON)) {
+//         formElement.elements[key].value = formDataJSON[key];
+//     }
 /// onPageLoad();//
-
