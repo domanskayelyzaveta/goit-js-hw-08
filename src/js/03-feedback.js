@@ -34,6 +34,7 @@ formEl.addEventListener('input', throttle(event => {
 formEl.addEventListener('submit', event => {
     event.preventDefault();
     formEl.reset();
+    localStorage.removeItem("feedback-form-state");
 });
 
 
