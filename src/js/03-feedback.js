@@ -34,14 +34,19 @@ formEl.addEventListener('input', throttle(event => {
 formEl.addEventListener('submit', event => {
     event.preventDefault();
     formEl.reset();
-    localStorage.removeItem("feedback-form-state");
 });
 
 
-///ось тут не розумію що передавати в дужки////
+function onPageLoad() {
+    const formDataJSON = localStorage.getItem("feedback-form-state");
+    const parsedForm = JSON.parse(formDataJSON);
+    
 
-// function onPageLoad() {
-//     for (const key of Object.keys(formDataJSON)) {
-//         formElement.elements[key].value = formDataJSON[key];
-//     }
-/// onPageLoad();//
+    for (const key of Object.keys(parsedForm)) {
+        formEl.elements[key].value = parsedForm[key];
+    }
+};
+ onPageLoad();
+
+
+ 
